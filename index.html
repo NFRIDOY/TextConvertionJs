@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make Upper Case</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="container">
+        <!-- textarea bootstrap -->
+        <div class="form-outline">
+            <h3>Enter Your Text</h3>
+            <!-- <label class="form-label" for="textAreaExample">Enter Your Text</label> -->
+            <textarea id="textArea" class="form-control" rows="8"
+                placeholder="Type Text To Convert Into Upper Case"></textarea>
+        </div>
+        <div class="btn-group">
+            <button type="button" id="ConverToUpper" class="btn btn-success" onclick="toUpper()">
+                Conver To Upper
+            </button>
+            <button type="button" id="ConvertToFirstUpper" class="btn btn-info" onclick="toFirstUpper()">
+                Convert First Letter Upper Case
+            </button>
+            <button type="button" id="ConverToLower" class="btn btn-danger" onclick="toLower()">
+                Conver To Lower Case
+            </button>
+            <button type="button" id="ConverToUpper" class="btn btn-dark" onclick="NormalCapitalization()">
+                Conver To Normal Capitalize
+            </button>
+        </div>
+    </main>
+
+    <script src="capitalizeS.js"></script>
+</body>
+
+</html>
